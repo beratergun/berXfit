@@ -22,7 +22,7 @@ jobs:
       - run: npm run lint
       - run: npm run typecheck
       - run: npm run test:coverage
-      - run: node --test scripts/apk-certificates.test.mjs scripts/pages-policy.test.mjs
+      - run: node --test scripts/apk-certificates.test.mjs scripts/pages-policy.test.mjs scripts/deployment-key.test.mjs
       - run: npm run build
       - run: npx playwright install --with-deps chromium webkit
       - run: npx playwright test

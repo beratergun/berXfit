@@ -2,6 +2,7 @@ import { execFileSync } from 'node:child_process';
 import { cp, mkdtemp, readFile, realpath, unlink, writeFile } from 'node:fs/promises';
 import path from 'node:path';
 import { validateLegacyManifest } from './pages-policy.mjs';
+import { normalizeDeploymentKey } from './deployment-key.mjs';
 
 if (
   process.env.GITHUB_REPOSITORY !== 'beratergun/berXfit' ||
@@ -30,7 +31,7 @@ const temporary = await mkdtemp(path.join(runner, 'berxfit-compat-'));
 const privateFile = path.join(temporary, 'deploy-key');
 const hostsFile = path.join(temporary, 'known-hosts');
 try {
-  await writeFile(privateFile, key, { mode: 0o600 });
+  await writeFile(privateFile, normalizeDeploymentKey(key), { mode: 0o600 });
   const response = await fetch('https://api.github.com/meta');
   if (!response.ok) throw new Error('GitHub SSH host keys could not be verified over HTTPS');
   const meta = await response.json();
