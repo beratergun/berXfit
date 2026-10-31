@@ -30,6 +30,6 @@ APK SHA-256: 344514052bd900699884e1d4273087cca362ab2de96937e3bebd9147ae0ff0a0.
 
 PWA ZIP SHA-256: 3d43a47a3f64ca6dfff2a347dfff0dab50b0185b42ee9f34aaf31c9a8beccb92; 106 dosya, 10.460.833 bayt. Yerel üretim build’iyle bütün dosyalar bayt düzeyinde eşleşir.
 
-Kalıcı public sertifika SHA-256: ab6c39cb845b42b960c73505b9ef2c2affb3bd2a7fd6925072c83d926d8c6e19. Özel anahtar release eklerinde veya repoda bulunmaz. Teknik repo/PWA adresi formda olarak korunur; görünen README başlığı ve GitHub açıklaması berXfit’tir.
+Kalıcı public sertifika SHA-256: ab6c39cb845b42b960c73505b9ef2c2affb3bd2a7fd6925072c83d926d8c6e19. Özel anahtar release eklerinde veya repoda bulunmaz. Asıl repo adı berXfit’tir; eski /formda/ PWA adresi ayrı uyumluluk yayınıyla korunur. Yeni /berXfit/ girişi aynı uygulamaya yönlenir.
 
 Elle: Formda’dan tam ZIP al, berXfit’e aktar ve doğrula; eski uygulamayı ve özgün yedeği koru. Özel imza klasörünü güvenli yedekle. Sosyal önizleme/profil sabitlemesi ve fiziksel cihaz deneyleri kullanıcıda kalır. Ayrıntılar [Android rehberi](android.md), [geçiş](BERXFIT_MIGRATION.md), [test raporu](BERXFIT_TEST_REPORT.md) ve [bilinen sınırlar](BERXFIT_KNOWN_LIMITATIONS.md) içindedir.
