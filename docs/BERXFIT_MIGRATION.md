@@ -39,7 +39,7 @@ Formda v2 PWA aynı adreste güncelleme alır. Yeni berXfit APK, `io.github.bera
 
 Yeni anahtar repo dışındaki kullanıcıya özel klasörde saklanır; CI yalnızca `BERXFIT_ANDROID_*` şifreli Secrets ile release APK üretir. Debug dağıtım veya imza cache'i yoktur. Her build `android/signing-identity.json` içindeki public sertifika SHA-256 pinini ve yeni appId'yi doğrular; değişen veya eksik anahtar dağıtımı engeller.
 
-31 Ekim ilk v3 Android CI sertifika kapısında durdu; sonraki tanılamada eski metin ayrıştırıcısının iki SHA alanını boş okuduğu görüldü. Bu ilk sonuçlar tek başına sertifika farkı kanıtı değildir. PEM/X509 karşılaştırmasına geçildi ve [CI 41194362584](https://github.com/beratergun/formda/actions/runs/41194362584) iki gerçek sertifikayı farklı buldu:
+31 Ekim ilk v3 Android CI sertifika kapısında durdu; sonraki tanılamada eski metin ayrıştırıcısının iki SHA alanını boş okuduğu görüldü. Bu ilk sonuçlar tek başına sertifika farkı kanıtı değildir. PEM/X509 karşılaştırmasına geçildi ve [CI 41194362584](https://github.com/beratergun/berXfit/actions/runs/41194362584) iki gerçek sertifikayı farklı buldu:
 
 - Yayımlanmış v2 sertifikası: `c5b094d15c64f2d649bff19b3dad65376a9e1a974c328288d9ff942e2fa9c0d9`.
 - O CI adayının sertifikası: `6312c8c504f2198a3e40d762bb4f7475440bea418400390cb143821af9496398`.

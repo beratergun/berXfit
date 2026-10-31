@@ -3,17 +3,17 @@
 <p align="center"><strong>Kişisel spor ve beslenme koçun.</strong><br>Hesapsız, ücretsiz, cihazında.</p>
 <p align="center">
 <a href="https://beratergun.github.io/formda/"><img src="docs/buttons/pwa.svg" width="310" alt="Telefona yükle"></a>
-<a href="https://github.com/beratergun/formda/releases/download/v3.0.0/berXfit-v3.0.0.apk"><img src="docs/buttons/apk.svg" width="310" alt="Android APK indir"></a>
+<a href="https://github.com/beratergun/berXfit/releases/download/v3.0.0/berXfit-v3.0.0.apk"><img src="docs/buttons/apk.svg" width="310" alt="Android APK indir"></a>
 </p>
 <p align="center">berXfit v3 PWA ve kalıcı imzalı Android APK yayımlandı. APK, Formda’yı ve verilerini koruyan ayrı kurulumdur.</p>
 <p align="center">
-<a href="https://github.com/beratergun/formda/actions/workflows/deploy.yml"><img src="https://github.com/beratergun/formda/actions/workflows/deploy.yml/badge.svg" alt="Kalite ve Pages"></a>
-<a href="https://github.com/beratergun/formda/actions/workflows/android.yml"><img src="https://github.com/beratergun/formda/actions/workflows/android.yml/badge.svg" alt="Android APK"></a>
+<a href="https://github.com/beratergun/berXfit/actions/workflows/deploy.yml"><img src="https://github.com/beratergun/berXfit/actions/workflows/deploy.yml/badge.svg" alt="Kalite ve Pages"></a>
+<a href="https://github.com/beratergun/berXfit/actions/workflows/android.yml"><img src="https://github.com/beratergun/berXfit/actions/workflows/android.yml/badge.svg" alt="Android APK"></a>
 <a href="LICENSE"><img src="https://img.shields.io/badge/license-MIT-087e83" alt="MIT"></a>
 <img src="https://img.shields.io/badge/PWA-offline-087e83" alt="Offline PWA">
 <img src="https://img.shields.io/badge/TypeScript-strict-3178c6" alt="Strict TypeScript">
 </p>
-<p align="center"><a href="#english">English</a> · <a href="https://github.com/beratergun/formda/releases">Yayımlanmış sürümler ve SHA-256</a></p>
+<p align="center"><a href="#english">English</a> · <a href="https://github.com/beratergun/berXfit/releases">Yayımlanmış sürümler ve SHA-256</a></p>
 
 ![berXfit: Bugün, antrenman ve fotoğraf; telefon çerçevelerinde kurgusal demo](docs/screenshots/light-collage.png)
 
@@ -25,7 +25,9 @@ berXfit, öğünlerini, antrenmanını ve günlüğünü aynı yerde tutan kişi
 
 - **Android / PWA:** [Uygulamayı aç](https://beratergun.github.io/formda/) → Profil → Telefona yükle. Chrome menüsündeki “Uygulamayı yükle” seçeneği de kullanılabilir.
 - **iPhone / PWA:** Safari → Paylaş → Ana Ekrana Ekle.
-- **Android / APK:** [berXfit v3.0.0 APK](https://github.com/beratergun/formda/releases/download/v3.0.0/berXfit-v3.0.0.apk), Android 8+. Yeni `io.github.beratergun.berxfit` kimliğiyle kalıcı imzalı, Formda ile yan yana kurulur. Formda’da **Profil → Tam yedek** al; berXfit’te **Yedeğimden devam et** ile geri yükleyip kayıtlarını doğrula. Eski kurulumu ve özgün ZIP’i koru. [Geçiş rehberi](docs/BERXFIT_MIGRATION.md).
+- **Android / APK:** [berXfit v3.0.0 APK](https://github.com/beratergun/berXfit/releases/download/v3.0.0/berXfit-v3.0.0.apk), Android 8+. Yeni `io.github.beratergun.berxfit` kimliğiyle kalıcı imzalı, Formda ile yan yana kurulur. Formda’da **Profil → Tam yedek** al; berXfit’te **Yedeğimden devam et** ile geri yükleyip kayıtlarını doğrula. Eski kurulumu ve özgün ZIP’i koru. [Geçiş rehberi](docs/BERXFIT_MIGRATION.md).
+
+Kaynak deposu **berXfit** adındadır. Eski `/formda/` adresi uyumluluk yayınıyla korunur; yeni [berXfit girişi](https://beratergun.github.io/berXfit/) aynı uygulamayı açar. [Depo geçiş ayrıntıları](docs/REPOSITORY_MIGRATION.md).
 
 berXfit v3 mevcut `/formda/` adresinde güncellenir; kurulu PWA yolu, IndexedDB ve medya kimlikleri korunur. Yeni berXfit Android uygulaması ayrı kimlik ve kalıcı release sertifikasıyla kurulur; Formda yerinde değiştirilmez. **Eski Yol APK'sındaki veriyi Profil → Tam yedek ile alıp berXfit'e geri yükle.** Ayrı Android kimlikleri nedeniyle otomatik veri geçişi yoktur. Yedeği doğrulamadan eski kurulumu kaldırma. PWA ve APK arasında da tam ZIP yedeği kullanılır.
 
@@ -89,7 +91,7 @@ npm run android:sync
 
 217 uygulama birim testi ve 10 imza testi; Pixel 7/Chromium ve iPhone 14/WebKit boyutlarında 32 E2E; iki temada 56 WCAG görünümü. Eski/yeni yedek alanları ve medya baytları gidiş dönüşte karşılaştırılır. [berXfit test raporu](docs/BERXFIT_TEST_REPORT.md) ve [kabul matrisi](docs/acceptance-matrix.md) kapsamı ve fiziksel cihaz sınırlarını açıklar. Masaüstü WebKit sonucu fiziksel iPhone testi değildir.
 
-31 Ekim v3 PWA yayını [Pages CI](https://github.com/beratergun/formda/actions/runs/41235278581) ile doğrulandı: CI Lighthouse 96/100/100, canlı mobil **100/100/100**; domain satır kapsamı %99,85. Gerçek v2 PWA paketinden v3'e güncelleme Chromium ve WebKit'te bütün kayıtlar/fotoğraf baytları ve tema korunarak geçti. Yeni Android APK, ayrı kimlik ve sabit release sertifikası doğrulanarak yayımlandı; [güncel yayın durumu](docs/BERXFIT_RELEASE_CHECKLIST.md).
+31 Ekim v3 PWA yayını [Pages CI](https://github.com/beratergun/berXfit/actions/runs/41235278581) ile doğrulandı: CI Lighthouse 96/100/100, canlı mobil **100/100/100**; domain satır kapsamı %99,85. Gerçek v2 PWA paketinden v3'e güncelleme Chromium ve WebKit'te bütün kayıtlar/fotoğraf baytları ve tema korunarak geçti. Yeni Android APK, ayrı kimlik ve sabit release sertifikası doğrulanarak yayımlandı; [güncel yayın durumu](docs/BERXFIT_RELEASE_CHECKLIST.md).
 
 ## Geçiş ve sınırlar
 
@@ -107,7 +109,7 @@ Fiziksel cihazlarla Health Connect kaynak uyumluluğunu genişletmek; iOS Health
 
 ## English
 
-**berXfit is your personal fitness and nutrition coach, on your device.** Install the [PWA](https://beratergun.github.io/formda/) on Android or iPhone. The [berXfit v3.0.0 Android APK](https://github.com/beratergun/formda/releases/download/v3.0.0/berXfit-v3.0.0.apk) supports Android 8+ and installs beside Formda with a persistent release signature. Formda and its existing data remain intact. The interface is Turkish. All demo records, measurements and silhouettes are fictional.
+**berXfit is your personal fitness and nutrition coach, on your device.** Install the [PWA](https://beratergun.github.io/formda/) on Android or iPhone. The [berXfit v3.0.0 Android APK](https://github.com/beratergun/berXfit/releases/download/v3.0.0/berXfit-v3.0.0.apk) supports Android 8+ and installs beside Formda with a persistent release signature. Formda and its existing data remain intact. The interface is Turkish. All demo records, measurements and silhouettes are fictional.
 
 Choose five ready-made programs or keep your personal plan. Adapt a single day to a busy gym, home equipment or a short session. Track sets, weight, reps, RPE and rest, with previous-session guidance. Explore 159 exercises and 34 apparatus entries: 11 source-backed original technical diagrams with pose controls, and 148 honest text/muscle-map guides. Timed holds use seconds rather than fabricated repetitions. Pause and resume persisted sessions; reorder exercises without changing your saved plan. Follow long-term plans, deload weeks, records, badges and shareable monthly stories.
 

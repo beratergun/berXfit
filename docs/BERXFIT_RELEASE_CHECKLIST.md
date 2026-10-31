@@ -2,7 +2,7 @@
 
 **PWA ve kalıcı imzalı Android APK yayımlandı.** APK, Formda ile yan yana kurulur; eski uygulama ve verisi korunur.
 
-[Canlı uygulama](https://beratergun.github.io/formda/) · [v3.0.0 ve dört indirme dosyası](https://github.com/beratergun/formda/releases/tag/v3.0.0).
+[Canlı uygulama](https://beratergun.github.io/formda/) · [v3.0.0 ve dört indirme dosyası](https://github.com/beratergun/berXfit/releases/tag/v3.0.0).
 
 | Kontrol         | Sonuç                                                                                                |
 | --------------- | ---------------------------------------------------------------------------------------------------- |
@@ -21,9 +21,9 @@
 
 Kaynak etiketi: v3.0.0 → 9bc02c5410f33f9effe93bf34d1c7e587348f8f8.
 
-- [Ana dal Pages/kalite 41235278581](https://github.com/beratergun/formda/actions/runs/41235278581): başarılı.
-- [Ana dal Android 41235278544](https://github.com/beratergun/formda/actions/runs/41235278544): başarılı.
-- [Etiketten release APK 41235908218](https://github.com/beratergun/formda/actions/runs/41235908218): başarılı; kalıcı public sertifika eşleşti.
+- [Ana dal Pages/kalite 41235278581](https://github.com/beratergun/berXfit/actions/runs/41235278581): başarılı.
+- [Ana dal Android 41235278544](https://github.com/beratergun/berXfit/actions/runs/41235278544): başarılı.
+- [Etiketten release APK 41235908218](https://github.com/beratergun/berXfit/actions/runs/41235908218): başarılı; kalıcı public sertifika eşleşti.
 - [Eski yol yönlendirmesi 41235629285](https://github.com/beratergun/yol/actions/runs/41235629285): başarılı; hedef /formda/.
 
 APK SHA-256: 344514052bd900699884e1d4273087cca362ab2de96937e3bebd9147ae0ff0a0.

@@ -20,6 +20,7 @@ android/app/src/main/assets/capacitor.plugins.json
 *.pfx
 *.key
 credentials.private.json
+pages-dist/
 *.apk
 *.aab
 signing.properties

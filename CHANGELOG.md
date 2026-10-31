@@ -15,7 +15,7 @@ berXfit v3.0.0: PWA ve kalıcı imzalı, Formda ile yan yana Android APK yayıml
 
 217 birim testi; kaynak, UI ve cihaz sınırlarının ayrıntıları [berXfit test raporunda](docs/BERXFIT_TEST_REPORT.md). Android/iPhone fiziksel kurulum ve sağlık sağlayıcı testleri NOT RUN. Eski v1/v2 debug sertifikaları yeni berXfit release kimliğiyle karıştırılmaz. [Geçiş](docs/BERXFIT_MIGRATION.md) ve [bilinen sınırlar](docs/BERXFIT_KNOWN_LIMITATIONS.md).
 
-[3.0.0]: https://github.com/beratergun/formda/releases/tag/v3.0.0
+[3.0.0]: https://github.com/beratergun/berXfit/releases/tag/v3.0.0
 
 ## [2.0.0] - 2026-10-30
 
@@ -31,7 +31,7 @@ berXfit v3.0.0: PWA ve kalıcı imzalı, Formda ile yan yana Android APK yayıml
 
 Eski Yol APK'sındaki veriyi Profil → Tam yedek ile alıp Formda'ya geri yükle. Yedeği doğrulamadan eski uygulamayı kaldırma. PWA aynı origin üzerindeki veri adlarını korur. APK, release Secrets yoksa Android geliştirme sertifikalı debug varyantıdır.
 
-[2.0.0]: https://github.com/beratergun/formda/releases/tag/v2.0.0
+[2.0.0]: https://github.com/beratergun/berXfit/releases/tag/v2.0.0
 
 ## [1.0.0] - 2026-10-30
 
@@ -49,4 +49,4 @@ Formda'nın telefona kurulabilen ilk sürümü.
 
 APK, release imza sırları yoksa Android geliştirme sertifikalı debug varyantıdır. İmza ve SHA-256 doğrulaması yayın artifact'larıyla birlikte sağlanır.
 
-[1.0.0]: https://github.com/beratergun/formda/releases/tag/v1.0.0
+[1.0.0]: https://github.com/beratergun/berXfit/releases/tag/v1.0.0

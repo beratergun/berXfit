@@ -12,3 +12,5 @@
 Son otomatik ve görsel sonuçlar [test raporunda](BERXFIT_TEST_REPORT.md), yayın durumu [kontrol dosyasında](BERXFIT_RELEASE_CHECKLIST.md) yer alır. Bu belgede bulunmayan veya çalıştırılmayan bir cihaz testi geçti sayılmaz.
 
 31 Ekim npm audit: dağıtılan runtime bağımlılıklarında **0 advisory**; tam geliştirme ağacında 2 düşük ve 23 orta, 0 yüksek/kritik. Bunlar lint/build/CLI zincirindedir (glob/minimatch/deepmerge kaynaklı aktarım). Otomatik force önerisi ESLint/Capacitor CLI için eski major sürümlere dönmeyi de içerdiğinden bu yayında uygulanmadı; uyumlu bakım güncellemeleri ayrı doğrulanmalıdır. Ham audit kayıtları ignored docs/qa altında tutulur.
+
+Teknik repo adı için son kullanıcı kararı önceki formda varsayımını güncelledi: asıl depo berXfit, eski /formda/ uygulama adresi uyumluluk yayınıyla korunur. [Depo geçişi](REPOSITORY_MIGRATION.md).

@@ -22,7 +22,7 @@ jobs:
       - run: npm run lint
       - run: npm run typecheck
       - run: npm run test:coverage
-      - run: node --test scripts/apk-certificates.test.mjs
+      - run: node --test scripts/apk-certificates.test.mjs scripts/pages-policy.test.mjs
       - run: npm run build
       - run: npx playwright install --with-deps chromium webkit
       - run: npx playwright test
@@ -39,10 +39,20 @@ jobs:
             playwright-report
             coverage
             docs/qa/**/lighthouse
+      - name: Publish preserved application address
+        if: github.ref == 'refs/heads/main' && github.repository == 'beratergun/berXfit' && github.event_name != 'pull_request'
+        env:
+          FORMDA_PAGES_DEPLOY_KEY: ${{ secrets.FORMDA_PAGES_DEPLOY_KEY }}
+          DEPLOY_AUTHOR_NAME: Seyid Berat Ergün
+          DEPLOY_AUTHOR_EMAIL: sberat.ergun@tedu.edu.tr
+        run: node scripts/publish-compatibility.mjs
+      - name: Prepare repository Pages entry
+        if: github.ref == 'refs/heads/main'
+        run: node scripts/prepare-pages.mjs
       - uses: actions/upload-pages-artifact@v5.0.0
         if: github.ref == 'refs/heads/main'
         with:
-          path: dist
+          path: pages-dist
   deploy:
     if: github.ref == 'refs/heads/main' && github.event_name != 'pull_request'
     needs: quality

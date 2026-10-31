@@ -17,12 +17,12 @@
 | Sunum                                         | 22 yeni ekran, 24 saniye GIF, 7 carousel; TR 193 / EN 218 kelime ve görsel boyutları doğrulandı                         |
 | Gizlilik/yazar                                | Özel talimatlar/reference/kişisel veri/anahtar repoda yok; yalnızca sahibin kimliği, boş commit trailer                 |
 
-[Pages CI](https://github.com/beratergun/formda/actions/runs/41012177668), [push APK CI](https://github.com/beratergun/formda/actions/runs/41012177729), [release tetikleyicisi APK CI](https://github.com/beratergun/formda/actions/runs/41012891384) başarılıdır. Release tetikleyicisi gerçek eki yeniden derler; son SHA bu dosyaya değil, indirilen release dosyasına karşı doğrulanır.
+[Pages CI](https://github.com/beratergun/berXfit/actions/runs/41012177668), [push APK CI](https://github.com/beratergun/berXfit/actions/runs/41012177729), [release tetikleyicisi APK CI](https://github.com/beratergun/berXfit/actions/runs/41012891384) başarılıdır. Release tetikleyicisi gerçek eki yeniden derler; son SHA bu dosyaya değil, indirilen release dosyasına karşı doğrulanır.
 
 - APK SHA-256: `c2008e0d9470f67632c12aa9d7b52aa555b4270f0b27a15857b8579fa6eba137`
 - PWA ZIP SHA-256: `14846382680ea4748709f84e895d9ed177461070c0ae25880881a8ba4d7c0767`
 
-[Canlı Formda](https://beratergun.github.io/formda/), [v2.0.0 ve ekleri](https://github.com/beratergun/formda/releases/tag/v2.0.0). Eski `/yol/` adresi gerçek tarayıcıda yeni adrese yönlendi; yönlendirme deposu Pages `built` durumundadır. v1.0.0 notuna “Formda olarak devam ediyor → v2.0.0” bağlantısı eklendi; taşınan v1 görsel/APK bağlantıları düzeltildi.
+[Canlı Formda](https://beratergun.github.io/formda/), [v2.0.0 ve ekleri](https://github.com/beratergun/berXfit/releases/tag/v2.0.0). Eski `/yol/` adresi gerçek tarayıcıda yeni adrese yönlendi; yönlendirme deposu Pages `built` durumundadır. v1.0.0 notuna “Formda olarak devam ediyor → v2.0.0” bağlantısı eklendi; taşınan v1 görsel/APK bağlantıları düzeltildi.
 
 Fiziksel Android Health Connect veri sağlayıcısı/izin paneli ve iPhone kurulum/kamera panelleri bu masaüstü ölçümüne dahil değildir. APK geliştirme sertifikalıdır; dört release Secrets kullanıcı tarafından eklenmelidir. iOS HealthKit ve güvenilir olmayan web sensörü adım sayacı bu sürümde bulunmaz; varsayımlarda gerekçelidir. İsteğe bağlı modelin 10/10 sonucu genel Türk mutfağı doğruluğu garantisi değildir.
 
